@@ -1,0 +1,20 @@
+# Ignore large files and directories
+benchmark_results/
+data/processed/
+data/raw/
+evaluation_results/
+models/
+notebooks/
+__pycache__/
+
+# Ignore version indicator files
+=1.2.0
+=1.24.0
+=1.7.4
+=2.0.0
+=2.3.0
+=3.1
+=3.7.0
+=4.30.0
+=4.65.0
+=5.8.0

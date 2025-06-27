@@ -1,0 +1,125 @@
+{
+  "hardware": {
+    "cpu": {
+      "physical_cores": 48,
+      "logical_cores": 96,
+      "meets_requirement": true
+    },
+    "ram": {
+      "total_gb": 251,
+      "meets_requirement": true,
+      "meets_recommended": true
+    },
+    "gpu": {
+      "available": true,
+      "count": 1,
+      "devices": [
+        {
+          "index": 0,
+          "name": "NVIDIA A2",
+          "vram_gb": 14.6,
+          "meets_requirement": false,
+          "meets_recommended": false
+        }
+      ]
+    },
+    "storage": {
+      "total_gb": 355,
+      "free_gb": 331,
+      "meets_requirement": true
+    }
+  },
+  "libraries": {
+    "pytorch": {
+      "installed": false,
+      "required_version": "2.0.0",
+      "installed_version": null,
+      "meets_requirement": false
+    },
+    "transformers": {
+      "installed": true,
+      "required_version": "4.30.0",
+      "installed_version": "4.52.4",
+      "meets_requirement": true
+    },
+    "faiss-cpu": {
+      "installed": true,
+      "required_version": "1.7.4",
+      "installed_version": "1.11.0",
+      "meets_requirement": true
+    },
+    "torch_geometric": {
+      "installed": true,
+      "required_version": "2.3.0",
+      "installed_version": "2.6.1",
+      "meets_requirement": true
+    },
+    "neo4j": {
+      "installed": true,
+      "required_version": "5.8.0",
+      "installed_version": "5.28.1",
+      "meets_requirement": true
+    },
+    "numpy": {
+      "installed": true,
+      "required_version": "1.24.0",
+      "installed_version": "2.0.2",
+      "meets_requirement": false
+    },
+    "pandas": {
+      "installed": true,
+      "required_version": "2.0.0",
+      "installed_version": "2.3.0+4.g1dfc98e16a",
+      "meets_requirement": true
+    },
+    "scikit-learn": {
+      "installed": false,
+      "required_version": "1.2.0",
+      "installed_version": null,
+      "meets_requirement": false
+    },
+    "matplotlib": {
+      "installed": true,
+      "required_version": "3.7.0",
+      "installed_version": "3.9.4",
+      "meets_requirement": true
+    },
+    "networkx": {
+      "installed": true,
+      "required_version": "3.1",
+      "installed_version": "3.2.1",
+      "meets_requirement": true
+    },
+    "tqdm": {
+      "installed": true,
+      "required_version": "4.65.0",
+      "installed_version": "4.67.1",
+      "meets_requirement": true
+    }
+  },
+  "platform": {
+    "os": "Linux",
+    "os_version": "#1 SMP Wed Apr 2 05:45:37 EDT 2025",
+    "os_release": "4.18.0-553.47.1.el8_10.x86_64",
+    "python_version": "3.9.20",
+    "date": "2025-06-23 22:42:11",
+    "is_colab": false,
+    "is_cloud": true
+  },
+  "neo4j": {
+    "connected": false,
+    "error": "Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):\nFailed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 111] Connection refused)\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)",
+    "uri": "bolt://localhost:7687"
+  },
+  "storage_requirements": {
+    "raw_data_size_gb": 10,
+    "processed_data_size_gb": 5,
+    "models_size_gb": 15,
+    "total_required_gb": 30
+  },
+  "optimization_suggestions": [
+    "GPU NVIDIA A2 has insufficient VRAM. Consider upgrading to NVIDIA Tesla V100 or A100.",
+    "Install missing libraries: pytorch, scikit-learn",
+    "Update outdated libraries: numpy"
+  ]
+}
